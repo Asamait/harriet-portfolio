@@ -1,143 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harriet Asamait | IT Portfolio</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f9fc;
-      color: #333;
-    }
-    header {
-      background-color: #1f2937;
-      color: #fff;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 10px 0 0;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      text-align: center;
-      color: #1f2937;
-      margin-bottom: 20px;
-    }
-    .projects, .connect {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .card {
-      .card{
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Harriet Asamait | IT Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f6f9;
+color:#333;
+}
+
+header{
+background:#1f2937;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+header h1{
+margin:0;
+font-size:36px;
+}
+
+header p{
+font-size:18px;
+margin-top:10px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+padding:25px;
+text-align:center;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
 text-decoration:none;
 color:inherit;
-      }
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      padding: 20px;
-      width: 250px;
-      text-align: center;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card i {
-      font-size: 2em;
-      color: #2563eb;
-      margin-bottom: 10px;
-    }
-    .card h3 {
-      margin: 10px 0;
-      font-size: 1.2em;
-    }
-    .card p {
-      font-size: 0.95em;
-      color: #555;
-    }
-    .social i {
-      font-size: 1.5em;
-      margin-right: 10px;
-      color: #2563eb;
-      transition: color 0.2s;
-    }
-    .social i:hover {
-      color: #1e40af;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background-color: #1f2937;
-      color: #fff;
-    }
-  </style>
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card i{
+font-size:40px;
+color:#2563eb;
+margin-bottom:10px;
+}
+
+.social{
+text-align:center;
+margin-top:20px;
+}
+
+.social a{
+margin:0 15px;
+font-size:28px;
+color:#2563eb;
+text-decoration:none;
+}
+
+.social a:hover{
+color:#1e40af;
+}
+
+footer{
+background:#1f2937;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
 </head>
+
 <body>
 
-  <header>
-    <h1>Harriet Asamait</h1>
-    <p>💻 Linux • 🌐 Networking • 🛡️ Cybersecurity • 🖥️ IT Support</p>
-    <p>Welcome to my IT portfolio! Documenting my learning journey and technical projects.</p>
-  </header>
+<header>
 
-  <section>
-    <h2>💼 Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <a href="Linux_Networking_Lab.pdf" target="_blank" class="card">
-  <i class="fa-brands fa-linux"></i>
-  <h3>Linux Practice Notes</h3>
-  <p>Hands-on exercises and command-line mastery.</p>
-        </a>
-        <a href="#" class="card">
-         <i class="fa-solid fa-network-wired"></i>
-  <h3>Networking Fundamentals Lab</h3>
-  <p>Networking concepts and practical labs.</p>
-        </a>
-        <a href="#" class="card">
-  <i class="fa-solid fa-shield-halved"></i>
-  <h3>Cybersecurity Awareness Guide</h3>
-  <p>Security practices and awareness notes.</p>
-        </a>
-        <a href="#" class="card">
-  <i class="fa-solid fa-computer"></i>
-  <h3>IT Support Troubleshooting Guide</h3>
-  <p>Common IT troubleshooting procedures.</p>
-        </a>
-  </section>
+<h1>Harriet Asamait</h1>
 
-  <section>
-    <h2>🔗 Connect With Me</h2>
-    <div class="connect social">
-      <a href="https://github.com/Asamait" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/harriet-asamait-269b8736a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="mailto:harrietasamait5@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-    </div>
-  </section>
+<p>IT Professional</p>
 
-  <footer>
-    &copy; 2026 Harriet Asamait. All rights reserved.
-  </footer>
+<p>Linux • Networking • Cybersecurity • IT Support</p>
+
+<p>Welcome to my IT portfolio where I document my learning journey and technical projects.</p>
+
+</header>
+
+
+<div class="container">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<a href="Linux_Networking_Lab.pdf" class="card" target="_blank">
+
+<i class="fa-brands fa-linux"></i>
+
+<h3>Linux Practice Notes</h3>
+
+<p>Hands-on Linux commands and system administration exercises.</p>
+
+</a>
+
+
+<a href="#" class="card">
+
+<i class="fa-solid fa-network-wired"></i>
+
+<h3>Networking Fundamentals Lab</h3>
+
+<p>Networking concepts including IP addressing, connectivity testing and troubleshooting.</p>
+
+</a>
+
+
+<a href="#" class="card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Cybersecurity Awareness Guide</h3>
+
+<p>Security best practices, threat awareness and digital safety guidelines.</p>
+
+</a>
+
+
+<a href="#" class="card">
+
+<i class="fa-solid fa-computer"></i>
+
+<h3>IT Support Troubleshooting Guide</h3>
+
+<p>Step-by-step procedures for diagnosing and solving common IT issues.</p>
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="container">
+
+<h2>Connect With Me</h2>
+
+<div class="social">
+
+<a href="https://github.com/Asamait" target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="https://www.linkedin.com/in/harriet-asamait-269b8736a" target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="mailto:harrietasamait5@gmail.com">
+
+<i class="fas fa-envelope"></i>
+
+</a>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Harriet Asamait | IT Portfolio</p>
+
+</footer>
 
 </body>
 </html>
