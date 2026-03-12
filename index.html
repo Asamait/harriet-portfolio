@@ -4,188 +4,210 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Harriet Asamait | IT Portfolio</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>Harriet Asamait | IT Professional</title>
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f4f6f9;
-color:#333;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
 }
 
-header{
-background:#1f2937;
-color:white;
-text-align:center;
-padding:60px 20px;
+/* HERO SECTION */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#1e293b,#020617);
 }
 
-header h1{
-margin:0;
-font-size:36px;
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
 }
 
-header p{
-font-size:18px;
-margin-top:10px;
+.hero h2{
+    font-weight:normal;
+    color:#94a3b8;
 }
 
-.container{
-max-width:1000px;
-margin:auto;
-padding:40px 20px;
+.hero p{
+    max-width:600px;
+    margin:auto;
+    margin-top:15px;
+    line-height:1.6;
+    color:#cbd5f5;
 }
 
-h2{
-text-align:center;
-margin-bottom:30px;
+/* PROJECT SECTION */
+
+.section{
+    padding:60px 20px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
 }
 
 .projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-.card {
-    display: block;
-    background: #1e1e1e;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    transition: transform 0.2s ease;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    max-width:1000px;
+    margin:auto;
 }
 
-.card:hover {
-    transform: scale(1.05);
+/* CARDS */
+
+.card{
+    background:#020617;
+    border-radius:12px;
+    padding:30px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+    border:1px solid #1e293b;
 }
 
 .card:hover{
-transform:translateY(-5px);
-box-shadow:0 6px 12px rgba(0,0,0,0.15);
+    transform:translateY(-8px);
+    border-color:#3b82f6;
 }
 
-.card i{
-font-size:40px;
-color:#2563eb;
-margin-bottom:10px;
+.card h3{
+    margin-top:0;
 }
 
-.social{
-text-align:center;
-margin-top:20px;
+.card p{
+    color:#94a3b8;
 }
 
-.social a{
-margin:0 15px;
-font-size:28px;
-color:#2563eb;
-text-decoration:none;
+/* CONNECT SECTION */
+
+.connect{
+    text-align:center;
+    padding:60px 20px;
 }
 
-.social a:hover{
-color:#1e40af;
+.icons a{
+    font-size:30px;
+    margin:0 15px;
+    text-decoration:none;
+    color:#3b82f6;
+}
+
+.icons a:hover{
+    color:white;
 }
 
 footer{
-background:#1f2937;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
+    text-align:center;
+    padding:20px;
+    color:#64748b;
 }
 
 </style>
+
+<!-- ICON LIBRARY -->
+<script src="https://kit.fontawesome.com/4c8cbe6e8a.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-<header>
+<!-- HERO -->
+
+<section class="hero">
 
 <h1>Harriet Asamait</h1>
 
-<p>IT Professional</p>
+<h2>IT Professional</h2>
 
-<p>Linux • Networking • Cybersecurity • IT Support</p>
+<p>
+Linux • Networking • Cybersecurity • IT Support  
+<br><br>
+Welcome to my IT portfolio where I showcase my technical learning,
+projects and professional journey in Information Technology.
+</p>
 
-<p>Welcome to my IT portfolio where I document my learning journey and technical projects.</p>
-
-</header>
+</section>
 
 
-<div class="container">
+<!-- PROJECTS -->
 
-<h2>Projects</h2>
-<a href="linux-fundamentals-notes.md" class="card" target="_blank">
+<section class="section">
 
-<i class="fa-brands fa-linux"></i>
+<h2>My Technical Projects</h2>
 
-<h3>Linux Practice Notes</h3>
+<div class="projects">
 
-<p>Linux fundamentals, commands and system administration notes.</p>
-
+<a href="linux-notes.md" class="card">
+<h3><i class="fab fa-linux"></i> Linux Practice Notes</h3>
+<p>
+Linux fundamentals, command line usage and system administration learning documentation.
+</p>
 </a>
 
-<a href="networking-fundamentals-notes.md" class="card" target="_blank">
-<h3>Networking Fundamentals Lab</h3>
-<p>Notes and practical learning on networking concepts.</p>
+
+<a href="networking-fundamentals-notes.md" class="card">
+<h3><i class="fas fa-network-wired"></i> Networking Fundamentals Lab</h3>
+<p>
+Practical networking concepts including IP addressing, protocols and network troubleshooting.
+</p>
 </a>
 
-<a href="cybersecurity-awareness-guide.md" class="card" target="_blank">
-<h3>Cybersecurity Awareness Guide</h3>
-<p>Documentation covering cybersecurity threats, attacks, and best practices.</p>
+
+<a href="cybersecurity-guide.md" class="card">
+<h3><i class="fas fa-shield-alt"></i> Cybersecurity Awareness Guide</h3>
+<p>
+Documentation on cybersecurity threats, attacks, vulnerabilities and protection strategies.
+</p>
 </a>
-  <a href="it-support-troubleshooting-notes.md" class="card">
-    <h3>IT Support Troubleshooting</h3>
-    <p>
-        A comprehensive guide covering IT troubleshooting methodologies,
-        common technical problems, diagnostic tools, and best practices
-        used by professional IT support specialists.
-    </p>
-  </a>
+
+
+<a href="it-support-troubleshooting.md" class="card">
+<h3><i class="fas fa-tools"></i> IT Support Troubleshooting</h3>
+<p>
+Professional troubleshooting methodologies used in diagnosing and resolving IT issues.
+</p>
+</a>
+
 </div>
 
-</div>
+</section>
 
 
-<div class="container">
+<!-- CONNECT -->
+
+<section class="connect">
 
 <h2>Connect With Me</h2>
 
-<div class="social">
+<div class="icons">
 
-<a href="https://github.com/Asamait" target="_blank">
-
+<a href="https://github.com/asamait" target="_blank">
 <i class="fab fa-github"></i>
-
 </a>
 
 <a href="https://www.linkedin.com/in/harriet-asamait-269b8736a" target="_blank">
-
 <i class="fab fa-linkedin"></i>
-
 </a>
 
-<a href="mailto:harrietasamait5@gmail.com">
-
+<a href="mailto:hrrietasamait5@gmail.com">
 <i class="fas fa-envelope"></i>
-
 </a>
 
 </div>
 
-</div>
+</section>
 
 
 <footer>
 
-<p>© 2026 Harriet Asamait | IT Portfolio</p>
+© 2026 Harriet Asamait | IT Portfolio
 
 </footer>
 
