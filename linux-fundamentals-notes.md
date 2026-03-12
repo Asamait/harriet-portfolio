@@ -15,6 +15,16 @@ Key advantages:
 - Powerful command-line tools
 
 ---
+Major Linux distributions include:
+
+- Ubuntu
+- Debian
+- Fedora
+- Kali Linux
+- Red Hat Enterprise Linux
+
+Linux is popular because it is **secure, stable, and customizable**.
+
 
 ## Basic Linux Commands
 
