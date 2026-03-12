@@ -50,16 +50,19 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
+.card {
+    display: block;
+    background: #1e1e1e;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease;
+}
 
-.card{
-background:white;
-border-radius:10px;
-padding:25px;
-text-align:center;
-box-shadow:0 4px 8px rgba(0,0,0,0.1);
-text-decoration:none;
-color:inherit;
-transition:0.3s;
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card:hover{
@@ -138,10 +141,14 @@ margin-top:40px;
 <h3>Cybersecurity Awareness Guide</h3>
 <p>Documentation covering cybersecurity threats, attacks, and best practices.</p>
 </a>
-<a href="it-support-troubleshooting-notes.md" class="card">
-  <h3>IT Support Troubleshooting Notes</h3>
-  <p>Comprehensive guide on IT troubleshooting methods, tools, and best practices.</p>
-</a>
+  <a href="it-support-troubleshooting-notes.md" class="card">
+    <h3>IT Support Troubleshooting</h3>
+    <p>
+        A comprehensive guide covering IT troubleshooting methodologies,
+        common technical problems, diagnostic tools, and best practices
+        used by professional IT support specialists.
+    </p>
+  </a>
 </div>
 
 </div>
